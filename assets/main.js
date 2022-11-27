@@ -22,12 +22,12 @@ document.querySelector('#close').onclick = () => {
     document.querySelector('#search-form').classList.remove('active');
 }
 
-// js 
+// swipe js 
 var swiper = new Swiper(".home-slider", {
     spaceBetween: 120,
     centeredSlides: true,
     autoplay: {
-        delay: 7500,
+        delay: 3500,
         disableOnInteraction:false,
     },
     pagination: {
