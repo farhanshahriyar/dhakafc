@@ -133,57 +133,6 @@ header .icon #menu-bars{
 }
 
 
-/* responsive for burgerio header part */
-@media (max-width:991px) {
-    html {
-        font-size: 55%;
-        
-    }
-
-    header {
-        padding: 1rem 2rem;
-    }
-}
-
-@media (max-width:768px) {
-
-    header .icon #menu-bars {
-        display: inline-block;
-    }
-
-    header .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #fff;
-        border-top: .1rem solid rgba(0,0,0,.2);
-        border-bottom: .1rem solid rgba(0,0,0,.2);
-        padding: 1rem;
-        clip-path: polygon(0 0, 100% 0,100% 0, 0 0);
-    }
-
-    header .navbar.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    header .navbar a{
-        display: block;
-        padding: 1.5rem;
-        margin: 1rem;
-        font-size: 2rem;
-        background: #eee;
-    }
-}
-
-@media (max-width:991px) {
-    html {
-        font-size: 50%;
-        
-    }
-}
-
-
 /* search bar */
 
 #search-form {
@@ -248,7 +197,7 @@ header .icon #menu-bars{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 2.5rem;
     padding-top: 9rem;
 }
 
@@ -361,6 +310,45 @@ header .icon #menu-bars{
     margin-right: 1rem;
     font-size: 2.5rem;
  }
+
+ /* footer */
+ .footer .box-container {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+     gap: 1.5rem;
+ }
+
+ .footer .box-container .box a {
+     display: block;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: var(--black);
+ }
+
+ .footer .box-container .box a:hover {
+     color: var(--green);
+     text-decoration: underline;
+ }
+
+ .footer .credit {
+     text-align: center;
+     border-top: .1rem solid rgba(0,0,0,.1);
+     font-size: 2rem;
+     color: var(--black);
+     padding: .5rem;
+     padding-top: 1.5rem;
+     margin-top: 1.5rem;
+ }
+
+ .footer .credit span {
+     color: var(--green);
+     cursor: pointer;
+ }
+
+ .footer .credit span:hover {
+    color: var(--green);
+    text-decoration: underline;
+}
 
 
 
